@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    width: 320px;
+    margin: 0;
+    padding: 15px;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .section {
+    margin-bottom: 15px;
+  }
+  
+  .section-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .company-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .company-item {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .company-item:last-child {
+    border-bottom: none;
+  }
+  
+  .company-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .company-name {
+    font-weight: bold;
+  }
+  
+  .company-ticker {
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .no-companies {
+    padding: 15px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #4CAF50;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .theme-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .theme-bull {
+    background-color: #4CAF50;
+  }
+  
+  .theme-bear {
+    background-color: #F44336;
+  }
+  
+  #current-page {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

@@ -1,0 +1,38 @@
+{
+    "name": "smart-stock-insights",
+    "version": "1.0.0",
+    "description": "Browser extension that displays relevant stock information based on the current website you're browsing",
+    "main": "src/background.js",
+    "scripts": {
+      "build": "node scripts/build.js",
+      "dev": "nodemon --watch src --exec npm run build",
+      "lint": "eslint src/",
+      "test": "jest",
+      "package": "npm run build && cd dist && zip -r ../smart-stock-insights.zip ."
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/yourusername/smart-stock-insights.git"
+    },
+    "keywords": [
+      "chrome-extension",
+      "stocks",
+      "finance",
+      "market",
+      "browser-extension"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/yourusername/smart-stock-insights/issues"
+    },
+    "homepage": "https://github.com/yourusername/smart-stock-insights#readme",
+    "devDependencies": {
+      "dotenv": "^16.0.3",
+      "eslint": "^8.38.0",
+      "jest": "^29.5.0",
+      "nodemon": "^2.0.22",
+      "sharp": "^0.32.0"
+    },
+    "dependencies": {}
+  }

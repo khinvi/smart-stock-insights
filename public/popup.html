@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Stock Insights</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <h1>Smart Stock Insights</h1>
+  
+  <div class="section">
+    <div class="section-title">Current Page</div>
+    <div id="current-page">Loading...</div>
+  </div>
+  
+  <div class="section">
+    <div class="section-title">Companies Identified</div>
+    <div id="companies-container" class="company-list">
+      <div class="no-companies">No companies identified on this page.</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-title">Watchlist</div>
+    <div id="watchlist-container" class="company-list">
+      <div class="no-companies">Your watchlist is empty.</div>
+    </div>
+  </div>
+  
+  <div class="settings">
+    <div>
+      <span class="theme-indicator theme-bull"></span>
+      <span>Theme: Market Condition</span>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+  
+  <script src="../src/popup.js"></script>
+</body>
+</html>
